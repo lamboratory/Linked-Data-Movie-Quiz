@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+	<title>Linked Data Movie Quiz</title>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="main">
+		<h1>Linked Data Movie Quiz</h1>
+		<p>Select an actor or an actress, and you will get questions about the movies where he or she has appeared!</p> 
+		<form onsubmit="return false"><span id="asking">Ask questions about</span>: <input type="text" name="actor" id="actor" /> <input type="button" class="button" value="Search" onclick="javascript:search()" /> <span id="sugg"></span></form>
+		<div id="personSearch"></div>
+		<div id="points"></div>
+	</div>
+
+	<div id="qContainer">
+		<div id="currentQuestion"></div>
+		<div id="questions" class="questions"></div>
+	</div>
+
+	<div id="footer">By <a href="http://twitter.com/guillelamb">@guillelamb</a> and <a href="http://twitter.com/jorgelamb">@jorgelamb</a>, accessing the <a href="http://linkedmdb.org">The Linked Movie DataBase</a> via <a href="http://www.w3.org/TR/rdf-sparql-query/">SPARQL</a> and <a href="http://developer.yahoo.com/yql">YQL</a>. [<a href="">More info</a>]</div>
+	<script src="functions.js"></script>
+</body>
+</html>
